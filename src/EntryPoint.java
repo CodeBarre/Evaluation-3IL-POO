@@ -1,3 +1,4 @@
+import java.text.MessageFormat;
 import java.util.Scanner;
 
 /**
@@ -6,9 +7,36 @@ import java.util.Scanner;
 public class EntryPoint {
 
     public static void main(String[] args) {
-        // configurez ici votre école :
-        // - Instantiation de vos classes (école, enseignants, élèves...)
-        // - Le programme est déjà pré écrit, il ne reste qu'à compléter les TODO
+
+        Ecole ecole = Ecole.getInstance();
+
+        Enseignant enseignant1 = new Enseignant("Hochgnug", "Julien", "Emakina.FR");
+        Enseignant enseignant2 = new Enseignant("Ruchaud", "William", "3iL");
+        Enseignant enseignant3 = new Enseignant("Hautot", "Adrien", "Erudo");
+
+        Promotion promotion1 = new Promotion("B3");
+        for (int i = 0; i < 3; i++) {
+            Eleve eleve1 = EleveFactory.create(LevelEleve.FORT);
+            promotion1.addEleve(eleve1);
+            Eleve eleve2 = EleveFactory.create(LevelEleve.MOYEN);
+            promotion1.addEleve(eleve2);
+            Eleve eleve3 = EleveFactory.create(LevelEleve.FAIBLE);
+            promotion1.addEleve(eleve3);
+        }
+        Promotion promotion2 = new Promotion("MS2D");
+        for (int i = 0; i < 3; i++) {
+            Eleve eleve1 = EleveFactory.create(LevelEleve.FORT);
+            promotion2.addEleve(eleve1);
+            Eleve eleve2 = EleveFactory.create(LevelEleve.MOYEN);
+            promotion2.addEleve(eleve2);
+            Eleve eleve3 = EleveFactory.create(LevelEleve.FAIBLE);
+            promotion2.addEleve(eleve3);
+        }
+
+        enseignant1.addPromotion(promotion1);
+        enseignant1.addPromotion(promotion2);
+        enseignant2.addPromotion(promotion1);
+        enseignant3.addPromotion(promotion2);
 
         System.out.println("/_\\ Bienvenue sur 3IL manager!");
 
@@ -26,16 +54,16 @@ public class EntryPoint {
                 // contrôle de la saisie
                 switch(functionToRun) {
                     case 1:
-                        // TODO FS1 : lister les élèves
                         System.out.println("Voici la liste des élèves");
+                        listEleves();
                         break;
                     case 2:
-                        // TODO FS2 :lister les enseignants
                         System.out.println("Voici la liste des enseignants");
+                        listEnseignants();
                         break;
                     case 3:
-                        // TODO FP1 : Donner un cours
                         System.out.println("C'est parti pour un cours!");
+                        donnerCours();
                         break;
                     case 4:
                         System.out.println("A la prochaine!");
@@ -46,5 +74,55 @@ public class EntryPoint {
 
         } while(functionToRun != 4);
 
+    }
+
+    private static void listEnseignants() {
+        Ecole ecole = Ecole.getInstance();
+
+        System.out.println("Liste des enseignants:");
+
+        for (Enseignant enseignant: ecole.getEnseignants()) {
+            System.out.println(enseignant);
+        }
+    }
+
+    private static void listEleves() {
+        Ecole ecole = Ecole.getInstance();
+
+        System.out.println("Liste des élèves:");
+
+        for (Promotion promotion: ecole.getPromotions()) {
+            System.out.println("\n #Promotion " + promotion.getNom() + ":");
+            for (Eleve eleve: promotion.getEleves()) {
+                System.out.println(" - \t " + eleve);
+            }
+        }
+    }
+
+    private static void donnerCours() {
+        Ecole ecole = Ecole.getInstance();
+        Console console = new Console();
+        System.out.println("Quel enseignant donne un cours?");
+        int i = 0;
+        for (Enseignant enseignant: ecole.getEnseignants()){
+            System.out.println(MessageFormat.format("{0} - {1} {2}", i, enseignant.getPrenom(), enseignant.getNom()));
+            i++;
+        }
+        Enseignant enseignant = ecole.getEnseignants().get(console.captureInt(0, ecole.getEnseignants().size()));
+
+        System.out.println("À quelle promotion?");
+        i = 0;
+        for (Promotion promotion: enseignant.getPromotions()){
+            System.out.println(MessageFormat.format("{0} - {1}", i, promotion.getNom()));
+            i++;
+        }
+        Promotion promotion = enseignant.getPromotions().get(console.captureInt(0, enseignant.getPromotions().size()));
+
+        System.out.println("Quel est l’intitulé du cours?");
+        Competence competence = new Competence(console.captureString());
+        for (Eleve eleve: promotion.getEleves()) {
+            eleve.learnCompetence(competence);
+        }
+        System.out.println("GG, les élèves deviennent meilleurs chaque jour et ont appris “" + competence.getNom() + "”!\n");
     }
 }

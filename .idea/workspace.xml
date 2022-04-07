@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ce1c65-cdf9-4d02-8195-765cd46f5cbe" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="a6ce1c65-cdf9-4d02-8195-765cd46f5cbe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Competence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ecole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eleve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EleveFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Enseignant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LevelEleve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Promotion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/EntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/EntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/META-INF/Evaluation-3IL-POO-Design-pattern.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/Promotion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/School.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/StudentFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/StudentFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/StudentType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/entity/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/utils/Console.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/utils/NamesGenerator$Names.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Evaluation-3IL-POO-Design-pattern/utils/NamesGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntryPoint.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,46 +39,24 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EntryPoint.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Evaluation-3IL-POO-Design-pattern.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -64,11 +68,15 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="1920" />
     <option name="height" value="1055" />
   </component>
+  <component name="ProjectId" id="27TFSt6qenRRIXGNoiRkLg4hAjL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
@@ -98,7 +106,12 @@
       </pane>
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -120,18 +133,6 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="EntryPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EntryPoint" />
@@ -146,6 +147,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -157,6 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649315935021</updated>
       <workItem from="1649315938029" duration="6002000" />
+      <workItem from="1649336183876" duration="6383000" />
     </task>
     <servers />
   </component>
@@ -195,7 +198,10 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Evaluation_3IL_POO$EntryPoint.ic" NAME="EntryPoint Coverage Results" MODIFIED="1649342248821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/Scanner.class">
